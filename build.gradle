@@ -1,0 +1,15 @@
+group 'me.yamakaja.unsafe'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile "org.ow2.asm:asm-all:5.0.4"
+}
