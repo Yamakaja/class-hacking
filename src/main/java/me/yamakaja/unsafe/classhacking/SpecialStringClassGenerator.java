@@ -15,7 +15,7 @@ public class SpecialStringClassGenerator {
         ClassWriter cw = new ClassWriter(0);
         MethodVisitor mv;
 
-        cw.visit(52, ACC_PUBLIC + ACC_SUPER, "me/yamakaja/unsafe/classhacking/SubStringImpl", null, "java/lang/String", new String[]{"me/yamakaja/unsafe/classhacking/SpecialString"});
+        cw.visit(52, ACC_PUBLIC + ACC_SUPER, "me/yamakaja/unsafe/classhacking/SpecialStringImpl", null, "java/lang/String", new String[]{"me/yamakaja/unsafe/classhacking/SpecialString"});
 
         cw.visitSource("SubString.java", null);
 
@@ -30,7 +30,7 @@ public class SpecialStringClassGenerator {
             mv.visitInsn(RETURN);
             Label l1 = new Label();
             mv.visitLabel(l1);
-            mv.visitLocalVariable("this", "Lme/yamakaja/unsafe/classhacking/SubString;", null, l0, l1, 0);
+            mv.visitLocalVariable("this", "Lme/yamakaja/unsafe/classhacking/SpecialStringImpl;", null, l0, l1, 0);
             mv.visitLocalVariable("initialValue", "Ljava/lang/String;", null, l0, l1, 0);
             mv.visitMaxs(2, 2);
             mv.visitEnd();
@@ -44,7 +44,7 @@ public class SpecialStringClassGenerator {
             mv.visitInsn(ARETURN);
             Label l1 = new Label();
             mv.visitLabel(l1);
-            mv.visitLocalVariable("this", "Lme/yamakaja/unsafe/classhacking/SubString;", null, l0, l1, 0);
+            mv.visitLocalVariable("this", "Lme/yamakaja/unsafe/classhacking/SpecialStringImpl;", null, l0, l1, 0);
             mv.visitMaxs(1, 1);
             mv.visitEnd();
         }
@@ -60,7 +60,7 @@ public class SpecialStringClassGenerator {
             mv.visitInsn(RETURN);
             Label l1 = new Label();
             mv.visitLabel(l1);
-            mv.visitLocalVariable("this", "Lme/yamakaja/unsafe/classhacking/SubString;", null, l0, l1, 0);
+            mv.visitLocalVariable("this", "Lme/yamakaja/unsafe/classhacking/SpecialStringImpl;", null, l0, l1, 0);
             mv.visitMaxs(2, 1);
             mv.visitEnd();
         }
