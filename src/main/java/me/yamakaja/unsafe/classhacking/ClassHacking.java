@@ -35,6 +35,4 @@ public class ClassHacking {
         specialString.print();
     }
 
-    public static native int getClassModifiers(Object object);
-
 }
